@@ -1,0 +1,135 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Cavo",
+      "iconUrl": "https://img.icons8.com/dotty/80/000000/audio-cable.png"
+    },
+    {
+      "id": 2,
+      "name": "Sensori",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/rfid-signal.png"
+    },
+    {
+      "id": 3,
+      "name": "Stampanti",
+      "iconUrl": "https://img.icons8.com/external-vitaliy-gorbachev-lineal-vitaly-gorbachev/60/000000/external-printer-photography-vitaliy-gorbachev-lineal-vitaly-gorbachev.png"
+    },
+    {
+      "id": 4,
+      "name": "Auricolari",
+      "iconUrl": "https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-earphones-music-kiranshastry-lineal-kiranshastry.png"
+    },
+    {
+      "id": 5,
+      "name": "Console",
+      "iconUrl": "https://img.icons8.com/external-itim2101-lineal-itim2101/64/000000/external-battle-esport-itim2101-lineal-itim2101.png"
+    },
+    {
+      "id": 6,
+      "name": "Smartphone",
+      "iconUrl": "https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-smartphone-multimedia-kiranshastry-lineal-kiranshastry.png"
+    },
+    {
+      "id": 7,
+      "name": "Alimentatori",
+      "iconUrl": "https://img.icons8.com/external-justicon-lineal-justicon/64/000000/external-charger-photography-justicon-lineal-justicon.png"
+    },
+    {
+      "id": 8,
+      "name": "USB",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/pen-drive.png"
+    },
+    {
+      "id": 9,
+      "name": "Tablet",
+      "iconUrl": "https://img.icons8.com/dotty/80/000000/android-tablet.png"
+    },
+    {
+      "id": 10,
+      "name": "Ciabatte",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/power-strip.png"
+    },
+    {
+      "id": 11,
+      "name": "Tastiera",
+      "iconUrl": "https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-keyboard-multimedia-kiranshastry-lineal-kiranshastry.png"
+    },
+    {
+      "id": 12,
+      "name": "Mouse",
+      "iconUrl": "https://img.icons8.com/wired/64/000000/mouse.png"
+    },
+    {
+      "id": 13,
+      "name": "Stand",
+      "iconUrl": "https://img.icons8.com/pastel-glyph/64/000000/laptop-stand--v2.png"
+    },
+    {
+      "id": 14,
+      "name": "PC Fisso",
+      "iconUrl": "https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-pc-tower-devices-flatart-icons-outline-flatarticons.png"
+    },
+    {
+      "id": 15,
+      "name": "Portatile",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/laptop--v1.png"
+    },
+    {
+      "id": 16,
+      "name": "Monitor",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/monitor--v1.png"
+    },
+    {
+      "id": 17,
+      "name": "Adattatori",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/network-card.png"
+    },
+    {
+      "id": 40,
+      "name": "Shark",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/shark.png"
+    },
+    {
+      "id": 41,
+      "name": "Planet",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/planet.png"
+    },
+    {
+      "id": 42,
+      "name": "Tree",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/forest.png"
+    },
+    {
+      "id": 44,
+      "name": "Telescopio",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/no-image-gallery.png"
+    },
+    {
+      "id": 45,
+      "name": "Tipo #1",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/no-image-gallery.png"
+    },
+    {
+      "id": 46,
+      "name": "qweqweqwe",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/no-image-gallery.png"
+    },
+    {
+      "id": 47,
+      "name": "Sensori Bluethoot",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/no-image-gallery.png"
+    },
+    {
+      "id": 48,
+      "name": "Bluetooth",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/bluetooth.png"
+    },
+    {
+      "id": 49,
+      "name": "Bluetooth 2",
+      "iconUrl": "https://img.icons8.com/ios/50/000000/no-image-gallery.png"
+    }
+  ],
+  "totalCount": 26
+}

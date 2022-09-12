@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fragment_ac_adapter_custom_project_iconCV"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fragment_ac_adapter_custom_project_iconIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:scaleType="fitCenter"
+            android:tint="@color/black"
+            app:srcCompat="@android:drawable/ic_input_get"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/fragment_ac_adapter_custom_project_textview"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:completionThreshold="1"
+        android:gravity="start"
+        android:hint="Search items"
+        android:imeOptions="actionNext"
+        android:inputType="textAutoComplete"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#6F000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_ac_adapter_custom_project_iconCV"
+        app:layout_constraintStart_toEndOf="@+id/fragment_ac_adapter_custom_project_iconCV"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

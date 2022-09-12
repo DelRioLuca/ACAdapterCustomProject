@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/drawable-watch/toast_frame.xml" value="0.2845" />
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/activity_list_item.xml" value="0.20572916666666666" />
+        <entry key="../../Library/Android/sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.20572916666666666" />
+        <entry key="app/src/main/res/layout/activity_ac_adapter_custom_project.xml" value="0.28802083333333334" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.34270833333333334" />
+        <entry key="app/src/main/res/layout/fragment_test_articolo.xml" value="0.3640625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
