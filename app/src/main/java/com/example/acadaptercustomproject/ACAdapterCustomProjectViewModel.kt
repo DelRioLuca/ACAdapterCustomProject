@@ -15,8 +15,9 @@ class ACAdapterCustomProjectViewModel : ViewModel() {
     var itemsList: MutableList<ACAdapterCustomProjectUIModel> = mutableListOf()
 
     sealed class UseCaseLiveData {
-        data class setListItems(val items: MutableList<String>) : UseCaseLiveData()
+        data class setListItems(val items: MutableList<ACAdapterCustomProjectUIModel>) : UseCaseLiveData()
         data class setIcon(val icon: String) : UseCaseLiveData()
+        data class setText(val itemText: String) : UseCaseLiveData()
     }
 
     val useCaseLiveData = MutableLiveData<Event<UseCaseLiveData>>()
@@ -36,7 +37,7 @@ class ACAdapterCustomProjectViewModel : ViewModel() {
         }
         val namesList: MutableList<String> = mutableListOf()
         itemsList.forEach { namesList.add(it.name) }
-        useCaseLiveData.value = Event(UseCaseLiveData.setListItems(namesList))
+        useCaseLiveData.value = Event(UseCaseLiveData.setListItems(itemsList))
     }
 
     private fun loadJSONFromAsset(context: Context): String {
@@ -51,14 +52,19 @@ class ACAdapterCustomProjectViewModel : ViewModel() {
         return json
     }
 
-    fun setIcon(itemName: String) {
-        var iconUrl = ""
-        itemsList.forEach {
-            if (it.name == itemName) {
-                iconUrl = it.iconUrl
-            }
-        }
-        useCaseLiveData.value = Event(UseCaseLiveData.setIcon(iconUrl))
+//    fun setIcon(itemName: String) {
+//        var iconUrl = ""
+//        itemsList.forEach {
+//            if (it.name == itemName) {
+//                iconUrl = it.iconUrl
+//            }
+//        }
+//        useCaseLiveData.value = Event(UseCaseLiveData.setIcon(iconUrl))
+//    }
+
+    fun onPositionTypeSelected(item: ACAdapterCustomProjectUIModel) {
+        useCaseLiveData.value = Event(UseCaseLiveData.setIcon(item.iconUrl))
+        useCaseLiveData.value = Event(UseCaseLiveData.setText(item.name))
     }
 }
 

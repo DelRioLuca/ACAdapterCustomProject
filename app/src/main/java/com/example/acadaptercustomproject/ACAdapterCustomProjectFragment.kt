@@ -1,6 +1,5 @@
 package com.example.acadaptercustomproject
 
-import android.R
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,7 +10,7 @@ import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.example.acadaptercustomproject.databinding.FragmentAcAdapteCustomProjectBinding
 
-class ACAdapterCustomProjectFragment : Fragment() {
+class ACAdapterCustomProjectFragment : Fragment(), ACAdapterCustomProjectListener {
 
     lateinit var binding: FragmentAcAdapteCustomProjectBinding
 
@@ -38,23 +37,31 @@ class ACAdapterCustomProjectFragment : Fragment() {
                 when (useCase) {
                     is ACAdapterCustomProjectViewModel.UseCaseLiveData.setListItems -> {
                         binding.fragmentAcAdapterCustomProjectTextview.setAdapter(
-                            ArrayAdapter(
-                                requireContext(),
-                                R.layout.simple_list_item_1,
-                                useCase.items
+                            AutoCompleteAdapter(
+                                context = requireContext(),
+                                allTypes = useCase.items,
+                                listener = this,
+                                view = R.layout.simple_list_item
                             )
                         )
-                        binding.fragmentAcAdapterCustomProjectTextview.setOnItemClickListener { parent, view, position, id ->
-                            viewModel.setIcon(useCase.items[position])
-                        }
+//                        binding.fragmentAcAdapterCustomProjectTextview.setOnItemClickListener { parent, view, position, id ->
+//                            viewModel.setIcon(useCase.items[position])
+//                        }
                     }
                     is ACAdapterCustomProjectViewModel.UseCaseLiveData.setIcon -> {
                         Glide.with(binding.fragmentAcAdapterCustomProjectIconIV)
                             .load(useCase.icon)
                             .into(binding.fragmentAcAdapterCustomProjectIconIV)
                     }
+                    is ACAdapterCustomProjectViewModel.UseCaseLiveData.setText -> {
+                        binding.fragmentAcAdapterCustomProjectTextview.setText(useCase.itemText)
+                    }
                 }
             }
         }
+    }
+
+    override fun onItemSelected(item: ACAdapterCustomProjectUIModel) {
+        viewModel.onPositionTypeSelected(item)
     }
 }
