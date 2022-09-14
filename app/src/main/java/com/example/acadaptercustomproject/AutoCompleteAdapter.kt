@@ -45,13 +45,6 @@ class AutoCompleteAdapter(
 
             override fun publishResults(charSequence: CharSequence?, filterResults: FilterResults) {
                 currentTypes = filterResults.values as MutableList<ACAdapterCustomProjectUIModel>
-
-//                val size = currentTypes.size
-//                val id = if (size >= 1) {
-//                    currentTypes[0].id.toInt() //return id first element if list size >1
-//                } else -1
-//
-//                listener.onTypeSelected(type = TypeListenerData(size, id))
                 notifyDataSetChanged()
             }
 

@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import androidx.fragment.app.viewModels
 import com.bumptech.glide.Glide
 import com.example.acadaptercustomproject.databinding.FragmentAcAdapteCustomProjectBinding
@@ -44,9 +43,6 @@ class ACAdapterCustomProjectFragment : Fragment(), ACAdapterCustomProjectListene
                                 view = R.layout.simple_list_item
                             )
                         )
-//                        binding.fragmentAcAdapterCustomProjectTextview.setOnItemClickListener { parent, view, position, id ->
-//                            viewModel.setIcon(useCase.items[position])
-//                        }
                     }
                     is ACAdapterCustomProjectViewModel.UseCaseLiveData.setIcon -> {
                         Glide.with(binding.fragmentAcAdapterCustomProjectIconIV)

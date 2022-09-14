@@ -52,16 +52,6 @@ class ACAdapterCustomProjectViewModel : ViewModel() {
         return json
     }
 
-//    fun setIcon(itemName: String) {
-//        var iconUrl = ""
-//        itemsList.forEach {
-//            if (it.name == itemName) {
-//                iconUrl = it.iconUrl
-//            }
-//        }
-//        useCaseLiveData.value = Event(UseCaseLiveData.setIcon(iconUrl))
-//    }
-
     fun onPositionTypeSelected(item: ACAdapterCustomProjectUIModel) {
         useCaseLiveData.value = Event(UseCaseLiveData.setIcon(item.iconUrl))
         useCaseLiveData.value = Event(UseCaseLiveData.setText(item.name))
